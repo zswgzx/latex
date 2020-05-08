@@ -1,0 +1,97 @@
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% Template downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Requires resume.cls in the same folder as
+% .tex file. The resume.cls file provides 
+% the style to structure the document.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Singwai Cheung}
+\address{1234 E ABC St, Apt D $\vert$  Chicago, IL 60600 $\vert$  312-456-7890 $\vert$ \href{mailto:xyz@gmail.com}{\textcolor{blue} {xyz@gmail.com}}}
+
+\begin{document}
+
+\begin{rSection}{Summary}
+
+$\bullet$ Expertise in MRI neuroimaging (DTI, volumetry, relaxometry, rs-fMRI \& QSM) for 11+ years\\
+$\bullet$ Established diverse MRI image processing/QA pipelines in Rush Alzheimer's Disease Center (RADC)\\
+$\bullet$ Passionate about quantitative  and customized healthcare system for disease prevention and diagnosis\\
+$\bullet$ Strong publication record (h-index=6, total citations=254 from \href{https://scholar.google.com/citations?user=ZbyXdH4AAAAJ}{\textcolor{blue} {Google Scholar}})\\
+$\bullet$ Effective and detail-oriented both as a team member and on own initiative within tight schedules
+
+
+\end{rSection}
+
+
+\begin{rSection}{Education}
+
+{\bf Ph.D. \qquad  Illinois Tech. (IIT)} $\vert$ Chicago, IL $\vert$  Biomedical Engineering \hfill {\em Sep. 2008 - May 2013} 
+\\ \qquad {\em \qquad Dissertation: Development of a digital human brain atlas}
+\\{\bf B.E. \qquad  Tsinghua University} $\vert$ Beijing, CN  $\vert$ Biomedical Engineering \hfill {\em Sep. 2004 - Jul. 2008} 
+\\ \qquad {\em \qquad Dissertation: PC-based low cost multiple physiological parameter monitor for human}
+
+\end{rSection}
+
+\begin{rSection}{Technical skills}
+
+$\bullet$ Strong technical background in human brain MRI image segmentation, co-registration and processing\\
+$\bullet$ Proficient in MRI neuroimaging software packages (e.g. Freesurfer, ANTS, FSL, SPM, AFNI)\\
+	$\bullet$ Solid software development skills (Python, MATLAB, Bash, C/C++ with Azure Cloud, Docker and xnat (\href{https://www.xnat.org}{\textcolor{blue}{https://www.xnat.org}}))\\
+%(\url{https://www.xnat.org/}))\\
+$\bullet$ Fluent in ML/deep learning approaches for various medical image processing tasks with GPU (using both Pytorch \& TensorFlow)\\
+$\bullet$ Visit my github @ \href{https://github.com/zswgzx/latex}{\textcolor{blue}{https://github.com/zswgzx/latex}}
+%\url{https://github.com/zswgzx/radc}
+\end{rSection}
+
+
+\begin{rSection}{Professional Experience}
+
+{\bf Research Bioengineer Ph.D., RADC, Chicago } \hfill {\em Jul. 2013 - Present} \\
+$\bullet$ Job duty: Responsible for advanced applications of neuroimaging in aging research\\
+$\bullet$ Analyze {\em in vivo} multi-modal MRI data on a large aging cohort, combining neuroimaging data with risk factors \& clinical data\\
+$\bullet$ Elucidate brain connectivity network through self-developed novel techniques integrating functional and structural information\\
+$\bullet$ Incorporate ML/deep learning to existing processing pipelines with Azure Cloud platform (NVIDIA GPU VMs along with Batch service and customized docker images)\\
+$\bullet$ Develop quality control procedures for analysis methodologies\\
+$\bullet$ Supervise and train staff in appropriate use of the aforementioned innovative techniques\\
+
+{\bf Research Assistant, MRI Research @ IIT, Chicago}\hfill {\em Aug. 2008 - May 2013} \\
+$\bullet$ Developed IIT Human Brain Atlas and IIT2 DTI human brain template for improved spatial normalization\\
+$\bullet$ Characterized the effect of standardized and study-specific DTI templates on the accuracy of inter-subject spatial normalization\\
+$\bullet$ Demonstrated the advantage of skeletonized atlas-based white matter segmentation in structure selection for diffusion characteristics\\
+$\bullet$ Contributed to the preparation of data for a HARDI human brain template and a probabilistic white matter atlas in the same space\\
+$\bullet$ Collaborate in associating late-life cognitive activities with diffusion anisotropy throughout the brain
+
+\end{rSection}
+
+\newpage
+
+\begin{rSection}{Publications}
+
+	{\bf Zhang, Shengwei}, Konstantinos Arfanakis. "Evaluation of standardized and study-specific diffusion tensor imaging templates of the adult human brain: Template characteristics, spatial normalization accuracy, and detection of small inter-group FA differences." {\em Neuroimage} 172 (2018): \href{https://doi.org/10.1016/j.neuroimage.2018.01.046}{40-50.}\\
+	{\bf Zhang, Shengwei}, Konstantinos Arfanakis. "White matter segmentation based on a skeletonized atlas: Effects on diffusion tensor imaging studies of regions of interest." {\em Journal of Magnetic Resonance Imaging} 40, no. 5 (2014): \href{https://doi.org/10.1002/jmri.24445}{1189-1198.}\\
+	{\bf Zhang, Shengwei}, Konstantinos Arfanakis. "Role of standardized and study‐specific human brain diffusion tensor templates in inter‐subject spatial normalization. " {\em Journal of Magnetic Resonance Imaging} 37, no. 2 (2013): \href{https://doi.org/10.1002/jmri.23842}{372-381.}\\
+	{\bf Zhang, Shengwei}, Huiling Peng, Robert J. Dawe, Konstantinos Arfanakis. "Enhanced ICBM diffusion tensor template of the human brain." {\em Neuroimage} 54, no. 2 (2011): \href{https://doi.org/10.1016/j.neuroimage.2010.09.008}{974-984.}\\
+	Varentsova, Anna,  {\bf Shengwei Zhang}, Konstantinos Arfanakis. "Development of a high angular resolution diffusion imaging human brain template." {\em Neuroimage} 91 (2014): \href{https://doi.org/10.1016/j.neuroimage.2014.01.009}{177-186.}\\
+	Peng, Huiling, Anton Orlichenko, Robert J. Dawe, Gady Agam, {\bf Shengwei Zhang}, Konstantinos Arfanakis. "Development of a human brain diffusion tensor template." {\em Neuroimage} 46, no. 4 (2009): \href{https://doi.org/10.1016/j.neuroimage.2009.03.046}{967-980.}\\
+	Lamar, Melissa, Konstantinos Arfanakis, Lei Yu, {\bf Shengwei Zhang}, S. Duke Han, Debra A. Fleischman, David A. Bennett, Patricia A. Boyle. "White matter correlates of scam susceptibility in community-dwelling older adults." {\em Brain imaging and behavior} (2019): \href{https://doi.org/10.1007/s11682-019-00079-7}{1-10.}\\
+	Arfanakis, Konstantinos, Robert S. Wilson, Christopher M. Barth, Ana W. Capuano, Anil Vasireddi, {\bf Shengwei Zhang}, Debra A. Fleischman, David A. Bennett. "Cognitive activity, cognitive function, and brain diffusion characteristics in old age." {\em Brain imaging and behavior} 10, no. 2 (2016): \href{https://doi.org/10.1007/s11682-015-9405-5}{455-463.}\\
+	Ridwan, Abdur Raquib, {\bf Shengwei Zhang}, Xiaoxiao Qi, David A. Bennett, Yongyi Yang, Konstantinos Arfanakis. "EVALUATION OF STANDARDIZED T1-WEIGHTED BRAIN TEMPLATES FOR USE IN STUDIES ON OLDER ADULTS." {\em Alzheimer's \& Dementia} 14, no. 7 (2018): \href{https://doi.org/10.1016/j.jalz.2018.06.1084}{P852-P853.}\\
+	Barth, Christopher, Robert Wilson, {\bf Shengwei Zhang}, David Bennett, Konstantinos Arfanakis. "Late-life cognitive activity and brain diffusion characteristics in nondemented elderly." {\em Alzheimer's \& Dementia} 9, no. 4 (2013): \href{http://dx.doi.org/10.1016/j.jalz.2013.04.298}{P543.}\\
+
+
+\end{rSection}
+
+\end{document}
