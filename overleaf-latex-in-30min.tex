@@ -8,23 +8,28 @@
 \usepackage{graphicx}
 \graphicspath{{./}}
 
-\title{First \LaTeX{} document}
-\author{SZ \thanks{For my love ones}}
-\date{May 2020}
-
 % preamble above
 
 \begin{document}
 
+\title{First \LaTeX{} document}
+\author{SZ \thanks{For my love ones}}
+\today
 % generate title as in preamble
 \maketitle
 
+\tableofcontents
+
 \begin{abstract}
-This is a full demonstration of all the example contents in \LaTeX{} in 30 minutes online from Overleaf.
+This is a full demonstration of all the example contents in Latex in 30 minutes online from Overleaf.
 \end{abstract}
+
+\section{Bold, italics, underline}
 
 % bold, italics(\textit{} or \emph{}) & underline
 \textbf{Latex} is \underline{widly} used and recognized by its \textbf{\textit{logo}} as in figure \ref{fig:logo}. 
+
+\section{Add image}
 
 \begin{figure}[h]
     \centering
@@ -33,20 +38,24 @@ This is a full demonstration of all the example contents in \LaTeX{} in 30 minut
     \label{fig:logo}
 \end{figure}
 
+\section{Unordered list}
 % unordered list
 \begin{itemize}
   \item The individual entries are indicated with a black dot, a so-called bullet.
   \item The text in the entries may be of any length.
 \end{itemize}
 
+\section{Ordered list}
 % ordered list
 \begin{enumerate}
   \item This is the first entry in our list
   \item The list numbers increase with each entry we add
 \end{enumerate}
 
+\section{Math equations}
 % add math equation inline (use one of these delimiters: \( ... \), $ ... $ or \begin{math} ... \end{math})
-Albert Einstein discovered the equation $E=mc^2$ in 1905.
+Albert Einstein discovered the equation $E=mc^2$ in 1905.\\
+Michelangelo was born on March 6\textsuperscript{th}, 1475.
 
 
 % add math equation, numbered and unnumbered, in display mode (use one of these delimiters: \[ ... \], \begin{displaymath} ... \end{displaymath} or \begin{equation} ... \end{equation})
@@ -70,10 +79,85 @@ Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case 
 
 Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
 
-
+\section{Paragraph}
 % paragraphs and newlines
-Hit the "Enter" key twice (to insert a double blank line) to start a new paragraph.
-%To start a new line without actually starting a new paragraph insert a \textit{break line} point, this can be done by \\ (a double backslash as in the example) or the \textbf{\newline} command. 
-%The recommended method to "simulate" paragraphs with larger spacing between them is to keep using double blank lines to create new paragraphs without any \\, and then add \usepackage{parskip} to the preamble. 
+% note how to add quote mark below
+Hit the `Enter' key twice (to insert a double blank line) to start a new paragraph.
+
+
+To start a new line without actually starting a new paragraph insert a \textit{break line} point, this can be done by \textbackslash{}\textbackslash{} (a double backslash as in the example) or the \textbf{\textbackslash{}newline} command. 
+
+
+The recommended method to `simulate' paragraphs with larger spacing between them is to keep using double blank lines to create new paragraphs without any \textbackslash{}\textbackslash{}, and then add \textbackslash{}usepackage\{parskip\} to the preamble. 
+
+
+\addcontentsline{toc}{section}{Unnumbered Section}
+\section*{Unnumbered Section}
+Just an example.
+
+
+\section{Tables}
+Tables \ref{table:data1} \ref{table:data2} and \ref{table:data3} are examples of referenced elements.
+
+\subsection{No boarder}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
+\caption{Table without boarder}
+\label{table:data1}
+\end{table}
+
+\subsection{With boarder 1}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\ 
+ cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+\caption{Table without boarder}
+\label{table:data2}
+\end{table}
+
+\subsection{With boarder 2}
+\begin{table}[h!]
+\begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ \hline
+ 2 & 7 & 78 & 5415 \\
+ \hline
+ 3 & 545 & 778 & 7507 \\
+ \hline
+ 4 & 545 & 18744 & 7560 \\
+ \hline
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+\caption{Table without boarder}
+\label{table:data3}
+\end{table}
+
+\section{Dashes and hyphens}
+Hyphen: daughter-in-law, X-rated\\
+En dash: pages 13--67\\
+Em dash: yes---or no? \\
+Minus sign: $0$, $1$ and $-1$
+
+\section{Ellipsis}
+Not like this ... but like this:\\
+New York, Tokyo, Budapest, \ldots
 
 \end{document}
